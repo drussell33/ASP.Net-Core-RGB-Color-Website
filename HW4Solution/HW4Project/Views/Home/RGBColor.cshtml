@@ -1,0 +1,45 @@
+@model RGBResponce
+
+
+<h1>Enter an RGB Color to see what it looks like!</h1>
+
+
+<div class="row">
+    <div class="col-6">
+
+    <form asp-controller="Home" asp-action="RGBColor" method="get" class="mb-3">
+        <div asp-validation-summary="All"></div>
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">R</span>
+            </div>
+            <input type="number" asp-for="Red" name="Red" class="form-control">
+        </div>
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">G</span>
+            </div>
+            <input type="number" asp-for="Green" name="Green" class="form-control">
+        </div>
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">B</span>
+            </div>
+            <input type="number" asp-for="Blue" name="Blue" class="form-control">
+        </div>
+        <button type="submit" class="btn btn-primary">Display</button>
+    </form>
+
+        
+</div>
+    <div class="col-6">
+        @if(Model != null){
+            <div class="output_color_box" style="background-color: @Model.HexConverted" ></div>
+            <p>@Model.HexConverted</p>
+
+        } else {
+            <div class="output_color_box"></div>
+        }
+        
+    </div>
+</div>

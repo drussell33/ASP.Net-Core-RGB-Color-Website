@@ -1,0 +1,27 @@
+﻿
+<div class="box-shadow text-center border-top border-bottom landing_box col-12">
+    <h1>CS460 Homework 4</h1>
+    <h1>2020</h1>
+    <p>A couple forms and some simple server-side logic -- learning the basics of GET, POST, form data and parameter and model binding. Doing it all with ASP.NET MVC Core.</p>
+    @* <button class="btn btn-success" href="https://wou-cs46x-resources.netlify.app/cs460/hw/hw4.html">Heres the Assignment</button> *@
+    <a class="btn btn-success"href="https://wou-cs46x-resources.netlify.app/cs460/hw/hw4.html">Heres the Assignment</a>
+</div>
+<hr>
+<div class="row">
+    <div class="col-6">
+        <h3>RGB Color</h3>
+        <p>What to know what a particular RGB color looks like? How about it's web color format?
+            Here you go. Uses query strings to send form data to the server, which reads them in the Request
+            object. It then performs the calculation and formats the result in a view to return to you.
+        </p>
+        <a asp-area="" asp-controller="Home" asp-action="RGBColor"><button class="btn btn-primary button.accept-policy">Try it out</button></a>
+        
+    </div>
+    <div class="col-6">
+        <h3>Color Interpolation</h3>
+        <p>Typical online color choosers are way to useful. We wanted something fun and completely useless.
+            This form POST's the data to the server and uses parameter binding to make it easy.
+        </p>
+        <a asp-area="" asp-controller="ColorInterpolator" asp-action="Create"><button class="btn btn-primary button.accept-policy">Check it out</button></a>
+    </div>
+</div>
