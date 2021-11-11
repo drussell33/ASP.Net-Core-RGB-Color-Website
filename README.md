@@ -1,0 +1,1 @@
+A couple forms and some simple server-side logic -- learning the basics of GET, POST, form data and parameter and model binding. Doing it all with ASP.NET MVC Core. 
